@@ -1,7 +1,7 @@
 ARG BASE=node:20.18.0
 FROM ${BASE} AS base
 
-WORKDIR /app
+WORKDIR /bolt_app
 
 # Install dependencies (this step is cached as long as the dependencies don't change)
 COPY package.json pnpm-lock.yaml ./
