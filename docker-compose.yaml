@@ -60,7 +60,7 @@ services:
     volumes:
       - type: bind
         source: .
-        target: /app
+        target: /bolt_app
         consistency: cached
       - /app/node_modules
     ports:
