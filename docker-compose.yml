@@ -29,7 +29,7 @@ services:
       - RUNNING_IN_DOCKER=true
     extra_hosts:
       - 'host.docker.internal:host-gateway'
-    command: npm run dockerstart
+    command: pnpm run dockerstart
     profiles:
       - production
 
@@ -87,6 +87,6 @@ services:
       - RUNNING_IN_DOCKER=true
     extra_hosts:
       - 'host.docker.internal:host-gateway'
-    command: npm run dockerstart
+    command: pnpm run dockerstart
     profiles:
       - prebuilt
